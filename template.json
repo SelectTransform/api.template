@@ -1,0 +1,14 @@
+{
+  "posts": {
+    "{{#each posts}}": {
+      "author": {
+        "user_id": "{{user_id}}",
+        "username": "{{$root.users[user_id-1].name}}",
+        "website": "{{$root.users[user_id-1].url}}"
+      },
+      "title": "{{title}}",
+      "content": "{{content}}",
+      "timestamp": "{{$root.moment(created_at).startOf('hour').fromNow()}}"
+    }
+  }
+}

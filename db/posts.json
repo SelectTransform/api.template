@@ -1,0 +1,9 @@
+[{
+  "user_id": 1, "title": "hello world", "content": "just setting up my blog", "created_at": 1505777155159
+}, {
+  "user_id": 1, "title": "post2", "content": "second post", "created_at": 1505756257359
+}, {
+  "user_id": 2, "title": "cool", "content": "cool blog bro", "created_at": 1504777258259
+}, {
+  "user_id": 3, "title": "im here", "content": "im here too, welcome me", "created_at": 1503777259159
+}]
