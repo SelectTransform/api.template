@@ -11,6 +11,6 @@
   "dependencies": {
     "express": "^4.15.4",
     "moment": "^2.18.1",
-    "stjs": "0.0.3"
+    "stjs": "0.0.4"
   }
 }

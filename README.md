@@ -35,7 +35,7 @@ Take a look at the `app.js` code for the `/` route handler, which looks like thi
 
 ```
 app.get('/', function (req, res) {
-  var json = JSON.select({ users: users, posts: posts })
+  var json = ST.select({ users: users, posts: posts })
                   .inject(['moment'])
                   .transformWith(template)
                   .root()

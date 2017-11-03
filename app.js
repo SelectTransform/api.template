@@ -4,7 +4,7 @@ const template = require('./template')
 const users = require('./db/users.json')
 const posts = require('./db/posts.json')
 global.moment = require('moment')
-require('stjs')
+const ST = require('stjs')
 
 // users only
 app.get('/users', function (req, res) {
@@ -16,7 +16,7 @@ app.get('/posts', function (req, res) {
 })
 // combined
 app.get('/', function (req, res) {
-  var json = JSON.select({ users: users, posts: posts })
+  var json = ST.select({ users: users, posts: posts })
                   .inject(['moment'])
                   .transformWith(template)
                   .root()
